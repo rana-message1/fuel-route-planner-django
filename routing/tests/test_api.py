@@ -268,3 +268,13 @@ class HealthAndMapTests(TestCase):
         response = self.client.get(reverse("route-map"))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, reverse("route-plan"))
+
+
+class TrailingSlashTests(TestCase):
+    def test_route_plan_accepts_url_without_trailing_slash(self):
+        response = APIClient().post("/api/v1/route-plan", {}, format="json")
+        self.assertEqual(response.status_code, 400)  # validation error as JSON, not a 500
+        self.assertIn("start_location", response.json())
+
+    def test_health_accepts_url_without_trailing_slash(self):
+        self.assertEqual(APIClient().get("/api/v1/health").status_code, 503)

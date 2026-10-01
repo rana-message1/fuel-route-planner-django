@@ -49,8 +49,13 @@
 <script>
   const API_URL = "{% url 'route-plan' %}";
   const map = L.map("map").setView([39.5, -98.35], 4);
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    maxZoom: 18, attribution: "&copy; OpenStreetMap contributors"
+  // OSM's tile policy requires a Referer header. Django sends
+  // "Referrer-Policy: same-origin", which strips it from cross-origin image
+  // requests, so tiles opt back in to sending the page's origin.
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 18,
+    referrerPolicy: "strict-origin-when-cross-origin",
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
   const layer = L.layerGroup().addTo(map);
   const panel = document.getElementById("panel");

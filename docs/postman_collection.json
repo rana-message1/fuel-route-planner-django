@@ -29,7 +29,8 @@
           "path": [
             "api",
             "v1",
-            "route-plan"
+            "route-plan",
+            ""
           ]
         },
         "body": {
@@ -48,7 +49,16 @@
           "originalRequest": {
             "method": "POST",
             "url": {
-              "raw": "{{base_url}}/api/v1/route-plan/"
+              "raw": "{{base_url}}/api/v1/route-plan/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "route-plan",
+                ""
+              ]
             },
             "body": {
               "mode": "raw",
@@ -86,7 +96,8 @@
           "path": [
             "api",
             "v1",
-            "route-plan"
+            "route-plan",
+            ""
           ]
         },
         "body": {
@@ -118,7 +129,8 @@
           "path": [
             "api",
             "v1",
-            "route-plan"
+            "route-plan",
+            ""
           ]
         },
         "body": {
@@ -150,7 +162,8 @@
           "path": [
             "api",
             "v1",
-            "route-plan"
+            "route-plan",
+            ""
           ]
         },
         "body": {
@@ -182,7 +195,8 @@
           "path": [
             "api",
             "v1",
-            "route-plan"
+            "route-plan",
+            ""
           ]
         },
         "body": {
@@ -214,7 +228,8 @@
           "path": [
             "api",
             "v1",
-            "route-plan"
+            "route-plan",
+            ""
           ]
         },
         "body": {
@@ -246,7 +261,8 @@
           "path": [
             "api",
             "v1",
-            "health"
+            "health",
+            ""
           ]
         }
       }
