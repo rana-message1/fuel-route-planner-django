@@ -1,0 +1,136 @@
+state,city,latitude,longitude,source
+AL,Eastaboga,33.605937,-86.021359,nominatim
+AL,Fackler,34.792583,-85.909977,nominatim
+AL,Irvington,30.506862,-88.233892,nominatim
+AL,Knoxville,33.591772,-85.897188,nominatim
+AR,West Helena,34.544012,-90.642619,nominatim
+AZ,Dewey,34.529755,-112.242115,nominatim
+AZ,Willow Beach,35.869780,-114.660065,nominatim
+CO,Dumont,39.764689,-105.600337,nominatim
+CT,Milldale,41.566137,-72.899967,nominatim
+FL,Summerfield,29.008592,-82.034809,nominatim
+GA,Ellabell,32.123537,-81.485667,nominatim
+GA,Ellenwood,33.610110,-84.287978,nominatim
+GA,Fortson,33.377891,-84.288812,nominatim
+GA,Midland,32.574861,-84.827152,nominatim
+GA,Rabun Gap,34.957214,-83.386454,nominatim
+GA,Rising Fawn,34.760079,-85.531076,nominatim
+ID,Boise,43.616616,-116.200886,nominatim
+IL,Edwards,40.745870,-89.744270,nominatim
+IN,Grovertown,41.375043,-86.504734,nominatim
+IN,Saint Croix,38.223953,-86.586339,nominatim
+KY,Glendale,37.601728,-85.905519,nominatim
+KY,Isom,37.187876,-82.898772,nominatim
+KY,Middlesboro,36.607297,-83.714332,nominatim
+KY,Pendleton,38.462288,-85.303568,nominatim
+KY,Waddy,38.137015,-85.074398,nominatim
+LA,Amite,30.726575,-90.508982,nominatim
+LA,Bethany,32.373768,-94.037965,nominatim
+MA,Bridgewater,41.990221,-70.975443,nominatim
+MA,Newton Lower Falls,42.325800,-71.256341,nominatim
+MA,North Billerica,42.585262,-71.287764,nominatim
+MA,North Oxford,42.150095,-71.868405,nominatim
+MD,Curtis Bay,39.225219,-76.590031,nominatim
+MD,Hunt Valley,39.492261,-76.658953,nominatim
+MD,Millersville,39.059554,-76.648022,nominatim
+MD,Newburg,38.377348,-76.953305,nominatim
+MD,Nottingham,39.363996,-76.452184,nominatim
+MD,Westover,38.124011,-75.706317,nominatim
+MI,Middleton,43.183366,-84.708889,nominatim
+MI,New Boston,42.162541,-83.402989,nominatim
+MI,Newport,42.002267,-83.308542,nominatim
+MI,Ottawa Lake,41.764152,-83.749387,nominatim
+MI,Sawyer,41.885321,-86.589467,nominatim
+MI,Smiths Creek,42.913919,-82.603808,nominatim
+MO,Bois D Arc,37.256438,-93.507696,nominatim
+MO,Ridgedale,36.503954,-93.223792,nominatim
+MS,Belden,34.310383,-88.788389,nominatim
+MS,Lawrence,32.325144,-89.232839,nominatim
+MT,Milltown,46.871295,-113.881719,nominatim
+NC,Candler,35.544436,-82.683803,nominatim
+NC,Hamptonville,36.098468,-80.760345,nominatim
+NC,Linwood,35.750694,-80.317831,nominatim
+NC,Supply,34.017672,-78.267499,nominatim
+NC,Winnabow,34.149337,-78.093605,nominatim
+ND,Grassy Butte,47.392514,-103.247966,nominatim
+NH,West Chesterfield,42.904248,-72.515645,nominatim
+NJ,Elizabethport,40.650103,-74.187089,nominatim
+NJ,Monroe Township,40.335756,-74.433446,nominatim
+NM,Casa Blanca,35.046318,-107.471394,nominatim
+NM,Clines Corners,35.009498,-105.669180,nominatim
+NM,Tinnie,33.370556,-105.226367,nominatim
+NV,Jean,35.778857,-115.324382,nominatim
+NV,Moapa,36.667365,-114.584977,nominatim
+NY,Castle Creek,42.227575,-75.918253,nominatim
+NY,Gansevoort,43.196205,-73.651397,nominatim
+NY,Glenmont,42.604802,-73.769566,nominatim
+NY,Harpursville,42.178412,-75.624630,nominatim
+NY,Hogansburg,44.973936,-74.663242,nominatim
+NY,Irving,42.567559,-79.112817,nominatim
+NY,New Hampton,41.409866,-74.411744,nominatim
+NY,West Coxsackie,42.360640,-73.816792,nominatim
+OH,Alvada,41.050332,-83.401869,nominatim
+OH,Diamond,41.098946,-81.022871,nominatim
+OH,North Jackson,41.100127,-80.857174,nominatim
+OK,Pryor,36.308428,-95.316914,nominatim
+PA,Blakeslee,41.092513,-75.592668,nominatim
+PA,Breezewood,39.999012,-78.240422,nominatim
+PA,Brogue,39.872355,-76.484639,nominatim
+PA,Drums,41.018139,-75.994925,nominatim
+PA,Feasterville Trevose,40.148406,-74.993473,nominatim
+PA,Greentown,41.321755,-75.305459,nominatim
+PA,Lake Ariel,41.453975,-75.382681,nominatim
+PA,Middlebury Center,41.843684,-77.274420,nominatim
+PA,Monroeton,41.712575,-76.474665,nominatim
+PA,Tafton,41.404534,-75.182953,nominatim
+PA,Waterfall,40.127583,-78.062782,nominatim
+SC,Batesburg,33.907920,-81.547326,nominatim
+SC,Leesville,33.916532,-81.513437,nominatim
+SC,Round O,32.937115,-80.540935,nominatim
+TN,Antioch,36.060060,-86.672219,nominatim
+TN,Cedar Grove,36.251720,-86.527772,nominatim
+TN,Denmark,35.532855,-89.003952,nominatim
+TN,Hartford,35.816765,-83.143207,nominatim
+TN,Heiskell,36.081816,-84.053982,nominatim
+TN,Hurricane Mills,35.971174,-87.781969,nominatim
+TN,Joelton,36.313108,-86.865277,nominatim
+TN,Kodak,35.974532,-83.626840,nominatim
+TN,Pioneer,36.417580,-84.314099,nominatim
+TX,Chappell Hill,30.141529,-96.256719,nominatim
+TX,Hankamer,29.858276,-94.626862,nominatim
+TX,Lenorah,32.304560,-101.876248,nominatim
+TX,Maxwell,29.881897,-97.795642,nominatim
+TX,Orla,31.825015,-103.909010,nominatim
+TX,Roans Prairie,30.583655,-95.943324,nominatim
+TX,Wall,31.374346,-100.303660,nominatim
+VA,Chesterfield,37.377793,-77.504670,nominatim
+VA,Clear Brook,39.256491,-78.096111,nominatim
+VA,Cross Junction,39.320378,-78.293338,nominatim
+VA,Doswell,37.860140,-77.464149,nominatim
+VA,Gladstone,37.546809,-78.849462,nominatim
+VA,Gum Spring,37.775526,-77.896811,nominatim
+VA,Henrico,37.629476,-77.518903,nominatim
+VA,Lambsburg,36.585408,-80.761182,nominatim
+VA,Lanexa,37.423757,-76.901075,nominatim
+VA,Providence Forge,37.442426,-77.043958,nominatim
+VA,Quinton,37.532789,-77.115445,nominatim
+VA,Raphine,37.937355,-79.232810,nominatim
+VA,Rockville,37.725978,-77.678324,nominatim
+VA,Rosedale,36.959278,-81.931235,nominatim
+VA,Ruther Glen,37.940875,-77.461865,nominatim
+VA,Skippers,36.611817,-77.546646,nominatim
+VA,Townsend,37.184981,-75.958473,nominatim
+VA,Troy,37.950974,-78.246393,nominatim
+VA,Woodford,38.113189,-77.408871,nominatim
+WI,Colgate,43.192830,-88.206774,nominatim
+WI,Franksville,42.760019,-87.913413,nominatim
+WI,Larsen,44.191650,-88.623999,nominatim
+WV,Ivydale,38.310097,-81.704569,nominatim
+WV,Kearneysville,39.388156,-77.885552,nominatim
+WV,Mount Nebo,39.602305,-79.707830,nominatim
+WV,Teays,38.441757,-81.952912,nominatim
+AR,Hot Springs National Park,34.503839,-93.055244,manual (Nominatim: Hot Springs AR)
+FL,Mc Alpin,30.139116,-82.951796,manual (Nominatim: McAlpin FL)
+FL,Saint Johns,30.098536,-81.565268,manual (Nominatim: ZIP 32259 Saint Johns FL)
+NM,Pueblo Of Acoma,35.055320,-107.571717,manual (Nominatim: Acomita NM at I-40 exit 102)
+PA,Etters,40.153003,-76.750655,manual (Nominatim: Goldsboro/Etters PA)

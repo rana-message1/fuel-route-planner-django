@@ -1,0 +1,255 @@
+{
+  "info": {
+    "name": "Fuel Route Planner",
+    "description": "Requests for the fuel route planner API. Set the base_url variable if the server is not on localhost:8000.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://127.0.0.1:8000"
+    }
+  ],
+  "item": [
+    {
+      "name": "Plan route - New York to Los Angeles",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/api/v1/route-plan/",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "route-plan"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"start_location\": \"New York, NY\",\n  \"finish_location\": \"Los Angeles, CA\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": [
+        {
+          "name": "200 OK (geometry truncated)",
+          "originalRequest": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/api/v1/route-plan/"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"start_location\": \"New York, NY\", \"finish_location\": \"Los Angeles, CA\"}"
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"start_location\": \"New York, NY\",\n  \"finish_location\": \"Los Angeles, CA\",\n  \"start_coordinates\": {\n    \"latitude\": 40.662712,\n    \"longitude\": -73.938677,\n    \"resolved_as\": \"New York, NY\",\n    \"source\": \"census\"\n  },\n  \"finish_coordinates\": {\n    \"latitude\": 34.019394,\n    \"longitude\": -118.410825,\n    \"resolved_as\": \"Los Angeles, CA\",\n    \"source\": \"census\"\n  },\n  \"distance_miles\": 2810.4,\n  \"duration_hours\": 50.31,\n  \"estimated_gallons\": 281.04,\n  \"total_fuel_cost\": 699.75,\n  \"fuel_stops\": [\n    {\n      \"station_id\": 72445,\n      \"station_name\": \"SHEETZ #639\",\n      \"address\": \"I-80 Exit 223\",\n      \"city\": \"Youngstown\",\n      \"state\": \"OH\",\n      \"latitude\": 41.099095,\n      \"longitude\": -80.645902,\n      \"price_per_gallon\": 3.059,\n      \"distance_from_start_miles\": 395.6,\n      \"off_route_miles\": 3.9,\n      \"fuel_in_tank_on_arrival_gallons\": 10.44,\n      \"gallons_purchased\": 6.19,\n      \"estimated_cost\": 18.94\n    },\n    {\n      \"station_id\": 72288,\n      \"station_name\": \"S&G #88\",\n      \"address\": \"I-475 Exit 13 & US-20\",\n      \"city\": \"Toledo\",\n      \"state\": \"OH\",\n      \"latitude\": 41.664071,\n      \"longitude\": -83.581861,\n      \"price_per_gallon\": 3.009,\n      \"distance_from_start_miles\": 561.9,\n      \"off_route_miles\": 5.8,\n      \"fuel_in_tank_on_arrival_gallons\": 0.0,\n      \"gallons_purchased\": 29.54,\n      \"estimated_cost\": 88.89\n    },\n    {\n      \"station_id\": 70744,\n      \"station_name\": \"CASEYS #3686\",\n      \"address\": \"I-80 EXIT 81\",\n      \"city\": \"Utica\",\n      \"state\": \"IL\",\n      \"latitude\": 41.345599,\n      \"longitude\": -88.986337,\n      \"price_per_gallon\": 2.969,\n      \"distance_from_start_miles\": 857.3,\n      \"off_route_miles\": 1.6,\n      \"fuel_in_tank_on_arrival_gallons\": 0.0,\n      \"gallons_purchased\": 48.28,\n      \"estimated_cost\": 143.34\n    },\n    {\n      \"station_id\": 68368,\n      \"station_name\": \"AKAL TRAVEL CENTER\",\n      \"address\": \"I-80 EX 360\",\n      \"city\": \"Waco\",\n      \"state\": \"NE\",\n      \"latitude\": 40.897,\n      \"longitude\": -97.461747,\n      \"price_per_gallon\": 2.799,\n      \"distance_from_start_miles\": 1340.1,\n      \"off_route_miles\": 5.2,\n      \"fuel_in_tank_on_arrival_gallons\": 0.0,\n      \"gallons_purchased\": 50.0,\n      \"estimated_cost\": 139.95\n    },\n    {\n      \"station_id\": 65287,\n      \"station_name\": \"AM ENERGY\",\n      \"address\": \"I-80, EXIT 248\",\n      \"city\": \"Overton\",\n      \"state\": \"NE\",\n      \"latitude\": 40.74057,\n      \"longitude\": -99.53741,\n      \"price_per_gallon\": 2.899,\n      \"distance_from_start_miles\": 1451.2,\n      \"off_route_miles\": 3.4,\n      \"fuel_in_tank_on_arrival_gallons\": 38.89,\n      \"gallons_purchased\": 11.11,\n      \"estimated_cost\": 32.21\n    },\n    {\n      \"station_id\": 69085,\n      \"station_name\": \"FATDOGS OGALLALA\",\n      \"address\": \"US-80, EXIT 126 & US-26/SR-61\",\n      \"city\": \"Ogallala\",\n      \"state\": \"NE\",\n      \"latitude\": 41.129595,\n      \"longitude\": -101.720677,\n      \"price_per_gallon\": 3.014,\n      \"distance_from_start_miles\": 1573.4,\n      \"off_route_miles\": 1.1,\n      \"fuel_in_tank_on_arrival_gallons\": 37.78,\n      \"gallons_purchased\": 12.22,\n      \"estimated_cost\": 36.83\n    },\n    {\n      \"station_id\": 73101,\n      \"station_name\": \"7-ELEVEN 42279\",\n      \"address\": \"I-76, Exit 39\",\n      \"city\": \"Keenesburg\",\n      \"state\": \"CO\",\n      \"latitude\": 40.155173,\n      \"longitude\": -104.56342,\n      \"price_per_gallon\": 3.149,\n      \"distance_from_start_miles\": 1747.7,\n      \"off_route_miles\": 3.1,\n      \"fuel_in_tank_on_arrival_gallons\": 32.57,\n      \"gallons_purchased\": 17.43,\n      \"estimated_cost\": 54.89\n    },\n    {\n      \"station_id\": 71712,\n      \"station_name\": \"MAVERIK COUNTRY STORE #693\",\n      \"address\": \"I-70, Exit 160 & hwy 191\",\n      \"city\": \"Green River\",\n      \"state\": \"UT\",\n      \"latitude\": 38.99346,\n      \"longitude\": -110.173424,\n      \"price_per_gallon\": 3.2823,\n      \"distance_from_start_miles\": 2125.3,\n      \"off_route_miles\": 0.2,\n      \"fuel_in_tank_on_arrival_gallons\": 12.24,\n      \"gallons_purchased\": 37.76,\n      \"estimated_cost\": 123.94\n    },\n    {\n      \"station_id\": 72965,\n      \"station_name\": \"Maverik #674\",\n      \"address\": \"I-15, Exit 45\",\n      \"city\": \"North Las Vegas\",\n      \"state\": \"NV\",\n      \"latitude\": 36.289865,\n      \"longitude\": -115.089181,\n      \"price_per_gallon\": 3.2823,\n      \"distance_from_start_miles\": 2520.9,\n      \"off_route_miles\": 2.1,\n      \"fuel_in_tank_on_arrival_gallons\": 10.44,\n      \"gallons_purchased\": 18.51,\n      \"estimated_cost\": 60.76\n    }\n  ],\n  \"fuel_summary\": {\n    \"number_of_stops\": 9,\n    \"starting_fuel_gallons\": 50.0,\n    \"gallons_purchased\": 231.04,\n    \"gallons_consumed\": 281.04,\n    \"fuel_remaining_gallons\": 0.0,\n    \"cost_basis\": \"total_fuel_cost is the money spent on fuel bought at the stops during the trip. The truck departs with a full tank; that starting fuel is not purchased on the trip.\"\n  },\n  \"vehicle\": {\n    \"max_range_miles\": 500.0,\n    \"miles_per_gallon\": 10.0,\n    \"tank_capacity_gallons\": 50.0\n  },\n  \"route\": {\n    \"provider\": \"osrm\",\n    \"geometry_format\": \"encoded_polyline_precision_5\",\n    \"geometry\": \"k_ewF~chbMLrF@P?T^hO@LQ?iEUUA?RChAEdBCnAI~CCd@Cz@AP?T?J@`@?l@R~H?HDdA@Z?VB|@@PHrCJpE@ZBp@?R@VBt@\\\\~M?R@T?L@L?R@N@RXtL@N?R...(truncated: full string is 121,179 characters)\",\n    \"point_count\": 35143\n  },\n  \"meta\": {\n    \"routing_api_calls\": 1,\n    \"geocoding_api_calls\": 0,\n    \"route_cache_hit\": false,\n    \"candidate_stations_near_route\": 459,\n    \"station_search_radius_miles\": 10.0,\n    \"min_savings_per_stop_usd\": 1.0,\n    \"processing_time_ms\": 1125\n  }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Plan route - Chicago to Dallas",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/api/v1/route-plan/",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "route-plan"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"start_location\": \"Chicago, IL\",\n  \"finish_location\": \"Dallas, TX\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Plan route - short trip, no fuel stop",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/api/v1/route-plan/",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "route-plan"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"start_location\": \"Austin, TX\",\n  \"finish_location\": \"San Antonio, TX\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Plan route - coordinates input",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/api/v1/route-plan/",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "route-plan"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"start_location\": \"40.7128,-74.0060\",\n  \"finish_location\": \"41.8781,-87.6298\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Validation error - blank start (400)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/api/v1/route-plan/",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "route-plan"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"start_location\": \"\",\n  \"finish_location\": \"Dallas, TX\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Location outside USA (422)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/api/v1/route-plan/",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "route-plan"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"start_location\": \"Toronto, ON\",\n  \"finish_location\": \"Dallas, TX\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Health check",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/api/v1/health/",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "health"
+          ]
+        }
+      }
+    }
+  ]
+}
