@@ -25,3 +25,7 @@ media/
 .vscode/
 .idea/
 .DS_Store
+
+# Postman desktop workspace files
+docs/.postman/
+docs/postman/
